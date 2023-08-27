@@ -1,0 +1,77 @@
+/* цвета таблицы */
+header,
+footer {
+    background-color: lightgrey;
+}
+
+.left {
+    background-color: lightgoldenrodyellow;
+}
+
+.right {
+    background-color: lightgreen;
+}
+
+.left__block {
+    background-color: sandybrown;
+}
+.footer__block {
+    background-color: ghostwhite;
+}
+
+/* позиционирование flex */
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+}
+
+.footer__block {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+}
+
+.left {
+    flex-grow: 2;
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.right {
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px;
+}
+.left__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+.left__block:first-child {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 40px;
+}
+.left__block:nth-child(2) {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 40px;
+}
+.left__block:nth-child(3) {
+    width: 100%;
+    padding: 20px;
+}
